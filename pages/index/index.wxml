@@ -6,7 +6,7 @@
   <block wx:for="{{slider}}" wx:key="11222">
     <swiper-item>
       <image src="{{item.image_src}}"  mode="widthFix"/>
-    </swiper-item>
+    </swiper-item>  
   </block>
 </swiper>
 <!-- 分类 -->
