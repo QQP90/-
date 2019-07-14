@@ -1,0 +1,48 @@
+<!-- 搜索框头部 -->
+<Search/>
+<!-- 轮播图 -->
+<swiper indicatorDots autoplay circular
+ interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{slider}}" wx:key="11222">
+    <swiper-item>
+      <image src="{{item.image_src}}"  mode="widthFix"/>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 分类 -->
+<view class="classfly">
+  <block wx:for="{{classfly}}" wx:key="1122" >
+    <view class="classfly-item">
+      <image src="{{item.image_src}}" class="image" mode="widthFix"/>
+    </view>
+  </block>
+</view>
+
+<!-- 4.0 首页楼层 -->
+<!-- 第一层循环 -->
+<!-- 时尚服装 -->
+  <block wx:for="{{floor}}" wx:key="">
+    <view class="floor-head">
+      <image src="{{item.floor_title.image_src}}" class="floor-head-image"></image>
+    </view>
+      <view class="floor-body">
+        <view class="floor-body-left">
+          <image class="floor-body-left-image" src="{{item.product_list[0].image_src}}"></image>
+        </view>
+        <!-- 第二次循环 -->
+      
+          <view class="floor-body-right"> 
+           <block wx:for="{{item.product_list}}" wx:key="" wx:for-item="item2" wx:for-index="index2">
+              <image class="floor-body-right-image"
+              wx:if="{{index2>0}}" 
+              src="{{item2.image_src}}"></image>
+            </block>
+          </view>
+      </view>
+  </block>
+  <!-- 返回按钮 -->
+  <!-- 5.0 返回顶部 -->
+<view class="top" hidden="{{ !showTop }}" bindtap="goTop" data-top="{{ 0 }}">
+  <text class="top-text">顶部</text>
+</view>
+

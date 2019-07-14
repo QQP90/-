@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/classify/classify",
+    "pages/car/car"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f00",
+    "navigationBarTitleText": "优购",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#f09",
+    "list": [
+      {
+        "iconPath": "/images/tabs/index.png",
+        "selectedIconPath": "/images/tabs/indexSelected.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "/images/tabs/classify.png",
+        "selectedIconPath": "/images/tabs/classifyed.png",
+        "pagePath": "pages/classify/classify",
+        "text": "分类"
+      },
+      {
+        "iconPath": "/images/tabs/car.png",
+        "selectedIconPath": "/images/tabs/getCar.png",
+        "pagePath": "pages/car/car",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
